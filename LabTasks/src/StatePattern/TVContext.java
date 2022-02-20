@@ -1,0 +1,14 @@
+package StatePattern;
+
+public class TVContext {
+	private State tvState;
+	public void setState(State state) {
+		this.tvState = state;
+	}
+	public State getState() {
+		return this.tvState;
+	}
+	public void doAction() {
+		this.tvState.doAction();
+	}
+}
